@@ -10,16 +10,17 @@ intents:
   - package_location_change
 
 entities:
-  - package
-  - location
-  - time
-  - date
-  - status
+  - packageId
+  - packageDeliveryDay
+  - packageDeliveryTime
 
 slots:
-  # replace with your slots
-  example_slot:
-    type: unfeaturized
+  packageId:
+    type: text
+  packageDeliveryDay:
+    type: text
+  packageDeliveryTime:
+    type: text
 
 templates:
   utter_greet:
@@ -38,6 +39,8 @@ templates:
     - "The package is canceled"
   utter_location_confirmation:
     - "The new location is confirmed" 
+  utter_ask_package_id:
+    - "Can you tell me your package id?" 
 
 actions:
   - utter_greet
@@ -48,3 +51,4 @@ actions:
   - utter_reschedule_confirmation
   - utter_cancel
   - utter_location_confirmation
+  - utter_ask_package_id

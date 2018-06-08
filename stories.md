@@ -7,4 +7,5 @@
     - utter_status
 * goodbye
     - utter_goodbye
+    - export
 
