@@ -27,3 +27,6 @@ train-core:
 
 cmdline:
 	python -m rasa_core.run -d models/current/dialogue -u models/current/nlu
+
+serve:
+	python -m rasa_core.server -d ./models/current/dialogue -u ./models/current/nlu --debug -o out.log --cors *

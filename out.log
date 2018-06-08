@@ -326,3 +326,12 @@ Predicted next action using policy_1_KerasPolicy
 Predicted next action 'action_listen' with prob 0.89.
 Action 'action_listen' ended with events '[]'
 Current topic: None
+/anaconda3/envs/tensorflow/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.6 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from './models/current/nlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Up and running
