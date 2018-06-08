@@ -1,0 +1,50 @@
+intents:
+  # add your intents
+  - greet
+  - goodbye
+  - package_delay
+  - package_location
+  - package_status
+  - package_reschedule
+  - package_cancel
+  - package_location_change
+
+entities:
+  - package
+  - location
+  - time
+  - date
+  - status
+
+slots:
+  # replace with your slots
+  example_slot:
+    type: unfeaturized
+
+templates:
+  utter_greet:
+    - "Hey, how can I help you?"
+  utter_goodbye:
+    - "Goodbye"
+  utter_apologize:
+    - "Sorry."
+  utter_status:
+    - "The status is good"
+  utter_location:
+    - "The location is near"
+  utter_reschedule_confirmation:
+    -  "The package delivery is rescheduled"
+  utter_cancel:
+    - "The package is canceled"
+  utter_location_confirmation:
+    - "The new location is confirmed" 
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_apologize
+  - utter_status
+  - utter_location
+  - utter_reschedule_confirmation
+  - utter_cancel
+  - utter_location_confirmation

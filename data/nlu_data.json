@@ -1,0 +1,67 @@
+{
+    "rasa_nlu_data": {
+      "common_examples": [
+        {
+          "text": "Can you search for my package ?",
+          "intent": "package_status",
+          "entities": []
+        },
+        {
+          "text": "Can you tell the package status ?",
+          "intent": "package_status",
+          "entities": []
+        },
+        {
+          "text": "Can you tell where is my package currently ?",
+          "intent": "package_status",
+          "entities": []
+        },
+        {
+          "text": "I have not received my package from last week ?",
+          "intent": "package_status",
+          "entities": []
+        },
+        {
+          "text": "Can i change my package delivery location?",
+          "intent": "package_cancel",
+          "entities": []
+        },
+        {
+          "text": "Can you cancel my package delivery ",
+          "intent": "package_cancel",
+          "entities": []
+        },
+        {
+          "text": "Can you reschedule my package",
+          "intent": "package_reschedule",
+          "entities": []
+        },
+        {
+          "text": "Where is my package",
+          "intent": "package_location",
+          "entities": []
+        },
+        {
+          "text": "why my is delivery delayed",
+          "intent": "package_delay",
+          "entities": []
+        },
+        {
+          "text": "Hello",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "Hi",
+          "intent": "greet",
+          "entities": []
+        },
+        {
+          "text": "Good Bye",
+          "intent": "goodbye",
+          "entities": []
+        }
+      ]
+    }
+  }
+  
