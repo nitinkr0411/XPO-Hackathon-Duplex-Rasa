@@ -513,3 +513,462 @@ Predicted next action using policy_1_KerasPolicy
 Predicted next action 'action_listen' with prob 0.47.
 Action 'action_listen' ended with events '[]'
 Current topic: None
+/anaconda3/envs/tensorflow/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.6 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from './models/current/nlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Up and running
+Creating a new tracker for id 'default'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '2'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hey, how can I help you?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.53.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 8 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.64.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 10 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.48.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 12 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.50.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 14 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_ask_package_id' with prob 0.42.
+Bot utterance 'BotUttered(text: Can you tell me your package id?, data: null)'
+Action 'utter_ask_package_id' ended with events '[]'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_ask_package_id': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.69.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 18 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_ask_package_id': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.33.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 20 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_ask_package_id': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.63.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 22 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.47.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 24 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.49.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 26 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_ask_package_id' with prob 0.42.
+Bot utterance 'BotUttered(text: Can you tell me your package id?, data: null)'
+Action 'utter_ask_package_id' ended with events '[]'
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_ask_package_id': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.69.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 30 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_ask_package_id': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.33.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'Hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 32 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_ask_package_id': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.63.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 34 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.47.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 36 events
+Current slot values: 
+	packageId: None
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.49.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+/anaconda3/envs/tensorflow/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.6 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from './models/current/nlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Up and running
+Creating a new tracker for id 'default'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+	packageId: None
+Current tracker state [None, {}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '2'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hey, how can I help you?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [{}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	packageDeliveryTime: None
+	packageDeliveryDay: None
+	packageId: None
+Current tracker state [{'prev_action_listen': 1.0, 'intent_greet': 1.0}, {'prev_utter_greet': 1.0, 'intent_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.53.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+/anaconda3/envs/tensorflow/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.6 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from './models/current/nlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Up and running
+Creating a new tracker for id 'default'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'lock set hai' with intent '{'confidence': 0.27751855280700966, 'name': 'package_status'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	packageDeliveryTime: None
+	packageId: None
+	packageDeliveryDay: None
+Current tracker state [None, {}, {'intent_package_status': 1.0, 'prev_action_listen': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.32.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 4 events
+Current slot values: 
+	packageDeliveryTime: None
+	packageId: None
+	packageDeliveryDay: None
+Current tracker state [{}, {'intent_package_status': 1.0, 'prev_action_listen': 1.0}, {'prev_action_listen': 1.0, 'intent_greet': 1.0}]
+There is no memorised next action
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.46.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+/anaconda3/envs/tensorflow/lib/python3.5/importlib/_bootstrap.py:222: RuntimeWarning: compiletime version 3.6 of module 'tensorflow.python.framework.fast_tensor_util' does not match runtime version 3.5
+  return f(*args, **kwds)
+
+Added 'nlp_spacy' to component cache. Key 'nlp_spacy-en'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/rasa_nlu/extractors/entity_synonyms.py:85: UserWarning: Failed to load synonyms file from './models/current/nlu/entity_synonyms.json'
+  "".format(entity_synonyms_file))
+
+Started http server on port 5005
+Up and running
+Creating a new tracker for id 'default'.
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'hi' with intent '{'confidence': 0.7258129441450046, 'name': 'greet'}' and entities '[]'
+Logged UserUtterance - tracker now has 2 events
+Current slot values: 
+	packageDeliveryDay: None
+	packageId: None
+	packageDeliveryTime: None
+Current tracker state [None, {}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}]
+There is a memorised next action '2'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_greet' with prob 1.00.
+Bot utterance 'BotUttered(text: Hey, how can I help you?, data: null)'
+Action 'utter_greet' ended with events '[]'
+Current tracker state [{}, {'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'where is my package' with intent '{'confidence': 0.406849644364435, 'name': 'package_status'}' and entities '[]'
+Logged UserUtterance - tracker now has 6 events
+Current slot values: 
+	packageDeliveryDay: None
+	packageId: None
+	packageDeliveryTime: None
+Current tracker state [{'intent_greet': 1.0, 'prev_action_listen': 1.0}, {'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_package_status': 1.0}]
+There is a memorised next action '10'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'utter_ask_package_id' with prob 1.00.
+Bot utterance 'BotUttered(text: Can you tell me your package id?, data: null)'
+Action 'utter_ask_package_id' ended with events '[]'
+Current tracker state [{'intent_greet': 1.0, 'prev_utter_greet': 1.0}, {'prev_action_listen': 1.0, 'intent_package_status': 1.0}, {'prev_utter_ask_package_id': 1.0, 'intent_package_status': 1.0}]
+There is a memorised next action '0'
+Predicted next action using policy_0_MemoizationPolicy
+Predicted next action 'action_listen' with prob 1.00.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'kg is 12345' with intent '{'confidence': 0.7531184102470184, 'name': 'package_id'}' and entities '[{'confidence': 0.8380086256809662, 'end': 11, 'value': '12345', 'extractor': 'ner_crf', 'entity': 'packageId', 'start': 6}]'
+Logged UserUtterance - tracker now has 11 events
+Current slot values: 
+	packageDeliveryDay: None
+	packageId: 12345
+	packageDeliveryTime: None
+Current tracker state [{'prev_action_listen': 1.0, 'intent_package_status': 1.0}, {'prev_utter_ask_package_id': 1.0, 'intent_package_status': 1.0}, {'intent_package_id': 1.0, 'prev_action_listen': 1.0, 'entity_packageId': 1.0, 'slot_packageId_0': 1.0}]
+There is no memorised next action
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_status' with prob 0.64.
+Bot utterance 'BotUttered(text: The status is good, data: null)'
+Action 'utter_status' ended with events '[]'
+Current tracker state [{'prev_utter_ask_package_id': 1.0, 'intent_package_status': 1.0}, {'intent_package_id': 1.0, 'prev_action_listen': 1.0, 'entity_packageId': 1.0, 'slot_packageId_0': 1.0}, {'intent_package_id': 1.0, 'entity_packageId': 1.0, 'slot_packageId_0': 1.0, 'prev_utter_status': 1.0}]
+There is no memorised next action
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.83.
+Action 'action_listen' ended with events '[]'
+Current topic: None
+Recreating tracker for id 'default'
+/anaconda3/envs/tensorflow/lib/python3.5/site-packages/sklearn/preprocessing/label.py:151: DeprecationWarning: The truth value of an empty array is ambiguous. Returning False, but in future this will result in an error. Use `array.size > 0` to check that an array is not empty.
+  if diff:
+
+Received user message 'thank you' with intent '{'confidence': 0.3021251303153138, 'name': 'package_status'}' and entities '[]'
+Logged UserUtterance - tracker now has 15 events
+Current slot values: 
+	packageDeliveryDay: None
+	packageId: 12345
+	packageDeliveryTime: None
+Current tracker state [{'intent_package_id': 1.0, 'prev_action_listen': 1.0, 'entity_packageId': 1.0, 'slot_packageId_0': 1.0}, {'intent_package_id': 1.0, 'entity_packageId': 1.0, 'slot_packageId_0': 1.0, 'prev_utter_status': 1.0}, {'prev_action_listen': 1.0, 'intent_package_status': 1.0, 'slot_packageId_0': 1.0}]
+There is no memorised next action
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'utter_goodbye' with prob 0.39.
+Bot utterance 'BotUttered(text: Goodbye, data: null)'
+Action 'utter_goodbye' ended with events '[]'
+Current tracker state [{'intent_package_id': 1.0, 'entity_packageId': 1.0, 'slot_packageId_0': 1.0, 'prev_utter_status': 1.0}, {'prev_action_listen': 1.0, 'intent_package_status': 1.0, 'slot_packageId_0': 1.0}, {'prev_utter_goodbye': 1.0, 'intent_package_status': 1.0, 'slot_packageId_0': 1.0}]
+There is no memorised next action
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Feature 'intent_package_id' (value: '1.0') could not be found in feature map. Make sure you added all intents and entities to the domain
+Predicted next action using policy_1_KerasPolicy
+Predicted next action 'action_listen' with prob 0.85.
+Action 'action_listen' ended with events '[]'
+Current topic: None

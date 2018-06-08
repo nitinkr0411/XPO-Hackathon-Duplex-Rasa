@@ -5,7 +5,7 @@ import vlc
 import time
 from mutagen.mp3 import MP3
 from gtts import gTTS
-
+import json
 r = sr.Recognizer()
 m = sr.Microphone()
 
@@ -28,7 +28,20 @@ try:
 			else:  # this version of Python uses unicode for strings (Python 3+)
 				print("Synthesizing Complete ->\n")
 				spit_out_text = "{}".format(value)
+				print(spit_out_text)
+				url = "http://localhost:5005/conversations/default/respond"
+				payload = "{\"query\":\""+spit_out_text+"\"}"
+				headers = {
+					'content-type': "application/json",
+					'cache-control': "no-cache",
+					'postman-token': "9f483742-6dba-b699-fe81-7e3f5e474af8"
+					}
 
+				response = requests.request("POST", url, data=payload, headers=headers)
+				print(response.text)
+				responseData = json.loads(response.text)
+				print(responseData[0]['text'])
+				spit_out_text = responseData[0]['text']
 				# spit_out_text is question here
 
 				####################################################################################
