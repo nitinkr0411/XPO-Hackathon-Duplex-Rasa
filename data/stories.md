@@ -29,6 +29,7 @@
 
 ## Generated Story -1502326871618888013
 * greet
+   - utter_greet
 * package_reschedule
     - utter_ask_package_id
 * package_id

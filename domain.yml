@@ -52,12 +52,12 @@ templates:
   utter_location_confirmation:
     - "The new location is confirmed" 
   utter_ask_package_id:
-    - "Sorry for the inconvinience caused, Could you please give me your Package I.D."
-    - "Can you tell me your package id?" 
-    - "Yeah, sure let me check can you please be online. Meanwhile, can you help me with your package id?"
-    - "Yes i can search your package in my database, please help me with more details"
-    - "Sorry for that, please help me with more details."
-    - "Yes i can search for your package, if you help me with more details. Can you tell me your package I.D.?"
+    - "Sorry for the inconvinience caused, Could you please give me your Package Tracking Number"
+    - "Can you tell me your Package Tracking Number?" 
+    - "Yeah, sure let me check can you please be online. Meanwhile, can you help me with your Package Tracking Number?"
+    - "Yes i can search your package in my database, please help me your package tracking number"
+    - "Sorry for that, please help me with your Package Tracking Number."
+    - "Yes i can search for your package, if you help me with more details. Can you tell me your Package Tracking Number?"
 
 actions:
   - utter_greet
