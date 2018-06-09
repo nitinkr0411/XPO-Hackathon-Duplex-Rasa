@@ -1,5 +1,4 @@
 intents:
-  # add your intents
   - greet
   - goodbye
   - package_delay
@@ -25,39 +24,50 @@ slots:
 
 templates:
   utter_greet:
-    - "Hey, how can I help you?"
-    - "Hi, how may I be of help?"
-    - "Hi"
+    - text: "Thank you for calling XPO Support. How can I help you?"
+    - text: "Hey, how can I help you?"
+    - text: "Hi, how may I be of help?"
+    - text: "Hi, I am speaking from XPO Support"
   utter_goodbye:
-    - "Goodbye"
-    - "Bye"
-    - "Bye, have a nice day"
+    - text: "Goodbye"
+    - text: "Bye"
+    - text: "Bye, have a nice day"
+    - text: "Bye, hope I was of help"
   utter_apologize:
-    - "Sorry"
-    - "I am really sorry. This will be taken care of"
-    - "Sorry for your frustration, I'll take care this doesn't happen again."
-    - "I understand your problem. I am really sorry."
+    - text: "Sorry"
+    - text: "I am really sorry. This will be taken care of"
+    - text: "Sorry for your frustration, I'll take care this doesn't happen again."
+    - text: "I understand your problem. I am really sorry."
   utter_status:
-    - "The status is good"
-    - "Your parcel is out of delivery, you'll hear from our delivery guy soon"
-    - "Your parcel is in bengaluru, It will be reaching this weekend"
-    - "Your package is at Bangalore Motherhub and it'll delivered by tomorrow"
+    - text: "Your parcel number {packageId} is out for delivery, you'll hear from our delivery guy soon"
+    - text: "Your parcel number {packageId} is in bengaluru, It will be reaching this weekend"
+    - text: "Your package number  {packageId} is at Bangalore Motherhub and it'll delivered by tomorrow"
   utter_location:
-    - "The location is near"
+    - text: "The location is near"
   utter_reschedule_confirmation:
-    - "Sure, I have rescheduled it for you"
-    -  "Yeah sure, I can do that for you. You will recieve a text message once the reschedule is successfull."
+    - text: "Sure, I have rescheduled package {packageId} for you"
+    - text: "Yeah sure, I can do that for you. You will recieve a text message once the reschedule for package {packageId} is successfull."
+    - text: "We have rescheduled your package {packageId} for delivery. "
   utter_cancel:
-    - "The package is canceled"
+    - text: "The package {packageId} is canceled"
+    - text: "Sure, We have cancelled your package {packageId}"
+    - text: "Okay, we have cancelled your package delivery, please reply to our feedback email"
   utter_location_confirmation:
-    - "The new location is confirmed" 
+    - text: "The new location is confirmed for {packageId}" 
+    - text: "Sure, we will deliver this package to the new address."
+    - text: "Ok, we can do it, we'll send out an email confirming the same for {packageId}"
+  utter_ask_reschedule_date:
+    - text: "To what date do you want to reschedule?"
+    - text: "When do you want your package delivery to be rescheduled for?"
+    - text: "When should we deliver instead?"
+    - text: "Sure, when do you want your package?"
   utter_ask_package_id:
-    - "Sorry for the inconvinience caused, Could you please give me your Package Tracking Number"
-    - "Can you tell me your Package Tracking Number?" 
-    - "Yeah, sure let me check can you please be online. Meanwhile, can you help me with your Package Tracking Number?"
-    - "Yes i can search your package in my database, please help me your package tracking number"
-    - "Sorry for that, please help me with your Package Tracking Number."
-    - "Yes i can search for your package, if you help me with more details. Can you tell me your Package Tracking Number?"
+    - text: "Sorry for the inconvinience caused, Could you please give me your Package Tracking Number"
+    - text: "Can you tell me your Package Tracking Number?" 
+    - text: "Yeah, sure let me check can you please be online. Meanwhile, can you help me with your Package Tracking Number?"
+    - text: "Yes i can search your package in my database, please help me your package tracking number"
+    - text: "Sorry for that, please help me with your Package Tracking Number."
+    - text: "Yes i can search for your package, if you help me with more details. Can you tell me your Package Tracking Number?"
 
 actions:
   - utter_greet
@@ -69,3 +79,4 @@ actions:
   - utter_cancel
   - utter_location_confirmation
   - utter_ask_package_id
+  - utter_ask_reschedule_date

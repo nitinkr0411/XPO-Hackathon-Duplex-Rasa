@@ -624,6 +624,47 @@
         "text": "The package was supposed to come yesterday. Can you let me know where it is now?",
         "intent": "package_delay",
         "entities": []
+      },
+      {
+        "text": "Thank You",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Its qwe123456",
+        "intent": "package_id",
+        "entities": [
+          {
+            "start": 4,
+            "end": 13,
+            "value": "qwe123456",
+            "entity": "packageId"
+          }
+        ]
+      },
+      {
+        "text": "My package number is ghj123456",
+        "intent": "package_id",
+        "entities": [
+          {
+            "start": 21,
+            "end": 30,
+            "value": "ghj123456",
+            "entity": "packageId"
+          }
+        ]
+      },
+      {
+        "text": "It's ghj456789",
+        "intent": "package_id",
+        "entities": [
+          {
+            "start": 5,
+            "end": 14,
+            "value": "ghj456789",
+            "entity": "packageId"
+          }
+        ]
       }
     ]
   }
