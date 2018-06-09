@@ -19,7 +19,7 @@ def answer_call():
     """Respond to incoming phone calls with a brief message."""
     # Start our TwiML response
     resp = VoiceResponse()
-    gather = Gather(input='speech', action='/completed', timeout=3)
+    gather = Gather(input='speech', action='/completed', timeout=10)
     if globalSid != request.values['CallSid']:
         gather.say('Hi, Welcome to XPO Support.', voice='woman', language='en')
     resp.append(gather)
