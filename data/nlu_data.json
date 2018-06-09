@@ -560,8 +560,71 @@
               "entity": "packageId"
             }
           ]
+        },
+        {
+          "text": "Please reschedule my package delivery for tomorrow",
+          "intent": "package_reschedule",
+          "entities": [
+            {
+              "start": 42,
+              "end": 50,
+              "value": "tomorrow",
+              "entity": "packageDeliveryDay"
+            }
+          ]
+        },
+        {
+          "text": "Can you change my package delivery date to day after tomorrow",
+          "intent": "package_reschedule",
+          "entities": [
+            {
+              "start": 43,
+              "end": 61,
+              "value": "day after tomorrow",
+              "entity": "packageDeliveryDay"
+            }
+          ]
+        },
+        {
+          "text": "Sorry, I was not able to pickup the delivery today. Can you reschedule it for 6 today?",
+          "intent": "package_reschedule",
+          "entities": [
+            {
+              "start": 78,
+              "end": 79,
+              "value": "6",
+              "entity": "packageDeliveryTime"
+            },
+            {
+              "start": 80,
+              "end": 85,
+              "value": "today",
+              "entity": "packageDeliveryDay"
+            }
+          ]
+        },
+        {
+          "text": "My package was supposed to come today. But, it has not yet reached. Can you tell me what is the status of the delivery?",
+          "intent": "package_delay",
+          "entities": [
+            {
+              "start": 32,
+              "end": 37,
+              "value": "today",
+              "entity": "packageDeliveryDay"
+            }
+          ]
+        },
+        {
+          "text": "I have changed my mind. Can you please cancel the package delivery?",
+          "intent": "package_cancel",
+          "entities": []
+        },
+        {
+          "text": "The package was supposed to come yesterday. Can you let me know where it is now?",
+          "intent": "package_delay",
+          "entities": []
         }
       ]
     }
   }
-  
