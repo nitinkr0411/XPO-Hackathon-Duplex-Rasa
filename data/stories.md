@@ -27,15 +27,6 @@
 * goodbye
     - utter_goodbye
 
-## Generated Story -1502326871618888013
-* greet
-   - utter_greet
-* package_reschedule
-    - utter_ask_package_id
-* package_id
-    - utter_reschedule_confirmation
-* goodbye
-    - utter_goodbye
 
 ## Package cancel
 * greet
@@ -77,7 +68,7 @@
     - utter_greet
 * package_reschedule
     - utter_ask_package_id
-* package_reschedule
+* package_reschedule{"packageDeliveryDay":"12th of May"}
     - utter_reschedule_confirmation
 * goodbye
     - utter_goodbye
@@ -85,7 +76,7 @@
 ## Generated Story 7979405933368615050
 * greet
     - utter_greet
-* package_status{"package_id":"we134412"}
+* package_status{"packageId":"we134412"}
     - utter_status
 * goodbye
     - utter_goodbye
@@ -93,7 +84,7 @@
 ## Generated Story 7979405923318615050
 * greet
     - utter_greet
-* package_status{"package_id":"we134412"}
+* package_status{"packageId":"we134412"}
     - utter_status
 * greet
     - utter_greet
@@ -104,3 +95,17 @@
 * goodbye
     - utter_goodbye
 
+
+	
+	
+	
+	
+## Generated Story 6343208550001392525
+* greet
+    - utter_greet
+* package_reschedule{"packageId":"we134412"}
+    - utter_ask_reschedule_date
+* package_reschedule
+    - utter_reschedule_confirmation
+* goodbye
+    - utter_goodbye
