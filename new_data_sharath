@@ -1,0 +1,79 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "can you reschedule my package number 12200 on 12th of May 10PM",
+        "intent": "package_reschedule",
+        "entities": [
+          {
+            "start": 37,
+            "end": 42,
+            "value": "12200",
+            "entity": "packageId"
+          },
+          {
+            "start": 46,
+            "end": 57,
+            "value": "12th of May",
+            "entity": "packageDeliveryDay"
+          },
+          {
+            "start": 58,
+            "end": 62,
+            "value": "10PM",
+            "entity": "packageDeliveryTime"
+          }
+        ]
+      },
+      {
+        "text": "Can you reschedule my package",
+        "intent": "package_reschedule",
+        "entities": []
+      },
+      {
+        "text": "reschedule my package",
+        "intent": "package_reschedule",
+        "entities": []
+      },
+      {
+        "text": "is it possible to reschedule my package",
+        "intent": "package_reschedule",
+        "entities": []
+      },
+      {
+        "text": "can you reschedule my delivery?",
+        "intent": "package_reschedule",
+        "entities": []
+      },
+      {
+        "text": "reschedule my delivery",
+        "intent": "package_reschedule",
+        "entities": []
+      },
+      {
+        "text": "reschedule my delivery number WE1231",
+        "intent": "package_reschedule",
+        "entities": [
+          {
+            "start": 30,
+            "end": 36,
+            "value": "WE1231",
+            "entity": "packageId"
+          }
+        ]
+      },
+      {
+        "text": "reschedule my package number WE12341",
+        "intent": "package_reschedule",
+        "entities": [
+          {
+            "start": 29,
+            "end": 36,
+            "value": "WE12341",
+            "entity": "packageId"
+          }
+        ]
+      }
+    ]
+  }
+}
