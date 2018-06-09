@@ -37,4 +37,22 @@
 * goodbye
     - utter_goodbye
 
+## Package cancel
+* greet
+   - utter_greet
+* package_cancel
+    - utter_ask_package_id
+* package_id
+    - utter_cancel
+* goodbye
+    - utter_goodbye
 
+
+## Generated Story -2530929912242778164
+* greet
+    - utter_greet
+* package_cancel{"packageId": "tyh12345"}
+    - slot{"packageId": "tyh12345"}
+    - utter_cancel
+* goodbye
+    - utter_goodbye
