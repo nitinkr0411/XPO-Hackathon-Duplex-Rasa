@@ -1,6 +1,8 @@
 from flask import Flask, request
 import requests
 from twilio.twiml.voice_response import VoiceResponse, Gather
+from twilio.rest import Client
+from flask import url_for
 import speech_recognition as sr
 import requests
 import urllib
@@ -10,6 +12,9 @@ import json
 
 app = Flask(__name__)
 
+account_sid = 'ACd131d0d91bccb7c2b627e32e8b2f6873'
+auth_token = '4d4e8e9fbddf606d815f8606dbf57a47'
+client = Client(account_sid, auth_token)
 globalSid = ''
 
 
@@ -21,7 +26,7 @@ def answer_call():
     resp = VoiceResponse()
     gather = Gather(input='speech', action='/completed', timeout=10)
     if globalSid != request.values['CallSid']:
-        gather.say('Hi, Welcome to XPO Support.', voice='woman', language='en')
+        gather.say('Hi, Welcome to XPO Support.', voice='woman', language='en-IN')
     resp.append(gather)
     return str(resp)
 
@@ -50,8 +55,28 @@ def answer_call2():
         resp.redirect('/answer')
     except Exception as e:
         print(str(e))
-        resp.say('I am having trouble understanding you.', voice='woman', language='en')
+        resp.say('I am having trouble understanding you.', voice='woman', language='en-IN')
         resp.redirect('/answer')
+    return str(resp)
+
+@app.route("/triggerCall", methods=['GET', 'POST'])
+def triggerCall():
+    global globalSid
+    call = client.calls.create(
+        to='+917406172019',
+        from_='+16104631764',
+        url='http://bbf7a186.ngrok.io/outbound'
+        )
+
+    return str('ok')
+
+@app.route('/outbound', methods=['POST'])
+def outbound():
+    resp = VoiceResponse()
+    gather = Gather(input='speech', action='/completed', timeout=10)
+    if globalSid != request.values['CallSid']:
+        gather.say('Hi, Welcome to XPO Support. Do you have some time to give us a feedback?', voice='woman', language='en-IN')
+    resp.append(gather)
     return str(resp)
 
 if __name__ == "__main__":

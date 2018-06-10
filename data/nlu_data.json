@@ -625,7 +625,7 @@
         "intent": "package_delay",
         "entities": []
       },
-	  {
+      {
         "text": "can you reschedule my package number 12200 on 12th of May 10PM",
         "intent": "package_reschedule",
         "entities": [
@@ -697,6 +697,85 @@
             "entity": "packageId"
           }
         ]
+      },
+      {
+        "text": "Yeah, I can give a feedback",
+        "intent": "feedback_yes",
+        "entities": [
+          {
+            "start": 19,
+            "end": 27,
+            "value": "feedback",
+            "entity": "feedback"
+          }
+        ]
+      },
+      {
+        "text": "I can give a feedback",
+        "intent": "feedback_yes",
+        "entities": []
+      },
+      {
+        "text": "Sure, I can give you a feedback",
+        "intent": "feedback_yes",
+        "entities": []
+      },
+      {
+        "text": "No, I don't have time for feedbacks now.",
+        "intent": "feedback_no",
+        "entities": [
+          {
+            "start": 26,
+            "end": 34,
+            "value": "feedback",
+            "entity": "feedback"
+          }
+        ]
+      },
+      {
+        "text": "No, I can't give a feedback now.",
+        "intent": "feedback_no",
+        "entities": []
+      },
+      {
+        "text": "No, I don't have time to give a feedback now.",
+        "intent": "feedback_no",
+        "entities": []
+      },
+      {
+        "text": "No, I am running late and can't give a feedback",
+        "intent": "feedback_no",
+        "entities": []
+      },
+      {
+        "text": "I did not like your services",
+        "intent": "feedback_bad",
+        "entities": []
+      },
+      {
+        "text": "I did not like your services and the package was in a bad shape",
+        "intent": "feedback_bad",
+        "entities": []
+      },
+      {
+        "text": "The package was delivered late",
+        "intent": "feedback_bad",
+        "entities": []
+      },
+      {
+        "text": "Your services are really good",
+        "intent": "feedback_good",
+        "entities": []
+      },
+      {
+        "text": "The delivery was excellent and was on time.",
+        "intent": "feedback_good",
+        "entities": []
+      },
+      {
+        "text": "The packaging was nice and had no damanges",
+        "intent": "feedback_good",
+        "entities": []
       }
     ]
   }

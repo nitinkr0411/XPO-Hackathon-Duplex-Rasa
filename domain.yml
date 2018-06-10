@@ -8,11 +8,16 @@ intents:
   - package_cancel
   - package_location_change
   - package_id
+  - feedback_yes
+  - feedback_no
+  - feedback_good
+  - feedback_bad
 
 entities:
   - packageId
   - packageDeliveryDay
   - packageDeliveryTime
+  - feedback
 
 slots:
   packageId:
@@ -61,6 +66,20 @@ templates:
     - text: "When do you want your package delivery to be rescheduled for?"
     - text: "When should we deliver instead?"
     - text: "Sure, when do you want your package?"
+  utter_feedback_questions:
+    - text: "Do you like our services?"
+    - text: "How was our response time?"
+    - text: "Where you able to get your problems fixed?"
+  utter_feedback_negative_responses:
+    - text: "Sure, We can call you back later"
+    - text: "Sure, we'll call you back later. Thanks for your time."
+    - text: "No problem, I can reach back later."
+  utter_feedback_good_response:
+    - text: "Thanks for your kind words. We'll definitely keep on improving. Have nice day, bye."
+    - text: "Yeah, it's great to listen to your feedback. Thanks for your time. Goodbye,"
+  utter_feedback_bad_response:
+    - text: "Sorry to hear this. We'll definitely improve upon your feedback. Thanks for your time. Have a nice day."
+    - text: "I am extremely sorry you had to go through these problems. Thanks for valuable feedback. We'll take a look over this and get back to you."
   utter_ask_package_id:
     - text: "Sorry for the inconvinience caused, Could you please give me your Package Tracking Number"
     - text: "Can you tell me your Package Tracking Number?" 
@@ -80,3 +99,7 @@ actions:
   - utter_location_confirmation
   - utter_ask_package_id
   - utter_ask_reschedule_date
+  - utter_feedback_questions
+  - utter_feedback_negative_responses
+  - utter_feedback_good_response
+  - utter_feedback_bad_response
