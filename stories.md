@@ -16,8 +16,6 @@
 * goodbye
     - utter_goodbye
 
-
-
 ## Generated Story 63432085dsdfd50001392525
 * feedback_no
     - utter_feedback_negative_responses

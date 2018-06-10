@@ -63,13 +63,15 @@ def answer_call2():
 def triggerCall():
     global globalSid
     call = client.calls.create(
-        to='+917406172019',
+        to='',#take from db and session as per implementation
         from_='+16104631764',
-        url='http://bbf7a186.ngrok.io/outbound'
+        url='' #Address where the server is hosted
         )
 
     return str('ok')
 
+
+#Outbound plug based on the suggestion from 1st round
 @app.route('/outbound', methods=['POST'])
 def outbound():
     resp = VoiceResponse()
