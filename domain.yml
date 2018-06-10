@@ -68,7 +68,7 @@ templates:
     - text: "Sure, when do you want your package?"
   utter_feedback_questions:
     - text: "Do you like our services?"
-    - text: "How was our response time?"
+    - text: "Did you like our services?"
     - text: "Where you able to get your problems fixed?"
   utter_feedback_negative_responses:
     - text: "Sure, We can call you back later"

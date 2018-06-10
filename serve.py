@@ -39,9 +39,9 @@ class SimpleWebBot(HttpInputComponent):
 
 def run(serve_forever=True):
     #path to your NLU model
-    interpreter = RasaNLUInterpreter("./models/nlu/default/customernlu")
+    interpreter = RasaNLUInterpreter("./models/current/nlu")
     # path to your dialogues models
-    agent = Agent.load("./models/dialogue", interpreter=interpreter)
+    agent = Agent.load("./models/current/dialogue", interpreter=interpreter)
     #http api endpoint for responses
     input_channel = SimpleWebBot()
     if serve_forever:

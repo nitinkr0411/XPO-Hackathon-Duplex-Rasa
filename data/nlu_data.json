@@ -57,6 +57,11 @@
         "entities": []
       },
       {
+        "text": "Hi.",
+        "intent": "greet",
+        "entities": []
+      },
+      {
         "text": "Good Bye",
         "intent": "goodbye",
         "entities": []

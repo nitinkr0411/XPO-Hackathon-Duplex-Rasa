@@ -24,9 +24,9 @@ def answer_call():
     """Respond to incoming phone calls with a brief message."""
     # Start our TwiML response
     resp = VoiceResponse()
-    gather = Gather(input='speech', action='/completed', timeout=10)
+    gather = Gather(input='speech', action='/completed', timeout=5)
     if globalSid != request.values['CallSid']:
-        gather.say('Hi, Welcome to XPO Support.', voice='woman', language='en-IN')
+        gather.say('Hi, Welcome to XPO Support.', voice='woman', language='en')
     resp.append(gather)
     return str(resp)
 
@@ -55,7 +55,7 @@ def answer_call2():
         resp.redirect('/answer')
     except Exception as e:
         print(str(e))
-        resp.say('I am having trouble understanding you.', voice='woman', language='en-IN')
+        resp.say('I am having trouble understanding you.', voice='woman', language='en')
         resp.redirect('/answer')
     return str(resp)
 
@@ -73,9 +73,9 @@ def triggerCall():
 @app.route('/outbound', methods=['POST'])
 def outbound():
     resp = VoiceResponse()
-    gather = Gather(input='speech', action='/completed', timeout=10)
+    gather = Gather(input='speech', action='/completed', timeout=5)
     if globalSid != request.values['CallSid']:
-        gather.say('Hi, Welcome to XPO Support. Do you have some time to give us a feedback?', voice='woman', language='en-IN')
+        gather.say('Hi, I am Jane, calling on behalf on XPO. Do you have some time to give us a feedback?', voice='woman', language='en')
     resp.append(gather)
     return str(resp)
 
