@@ -9,6 +9,11 @@ import urllib
 import vlc
 import time
 import json
+from googletrans import Translator
+from indic_transliteration import sanscript
+from indic_transliteration.sanscript import SchemeMap, SCHEMES, transliterate
+translator = Translator()
+
 
 app = Flask(__name__)
 
@@ -24,9 +29,9 @@ def answer_call():
     """Respond to incoming phone calls with a brief message."""
     # Start our TwiML response
     resp = VoiceResponse()
-    gather = Gather(input='speech', action='/completed', timeout=5)
+    gather = Gather(input='speech', action='/completed', timeout=5, language='en')
     if globalSid != request.values['CallSid']:
-        gather.say('Hi, Welcome to XPO Support.', voice='woman', language='en')
+        gather.say('Willkommen beim xpo-Support.', voice='woman', language='de')
     resp.append(gather)
     return str(resp)
 
@@ -38,9 +43,11 @@ def answer_call2():
     # Start our TwiML response
     resp = VoiceResponse()
     try:
+        #convertedText = translator.translate(request.values['SpeechResult'], src='').text
+        convertedText = request.values['SpeechResult']
         globalSid = request.values['CallSid']
         url = "http://localhost:5005/conversations/"+ request.values['CallSid']+"/respond"
-        payload = "{\"query\":\""+request.values['SpeechResult']+"\"}"
+        payload = "{\"query\":\""+convertedText+"\"}"
         headers = {
 			'content-type': "application/json",
 			'cache-control': "no-cache",
@@ -48,14 +55,16 @@ def answer_call2():
         }
         response = requests.request("POST", url, data=payload, headers=headers)
         responseData = json.loads(response.text)
-        print('Human -> ' + request.values['SpeechResult'])
-        print('Bot   -> ' + responseData[0]['text'])
-        spit_out_text = responseData[0]['text']
-        resp.say(spit_out_text, voice='woman', language='en')
+        print(responseData)
+        convertedReply = translator.translate(responseData[0]['text'], src='en', dest='de').text
+        print('Human -> ' + convertedText)
+        print('Bot   -> ' + convertedReply)
+        spit_out_text = convertedReply
+        resp.say(spit_out_text, voice='woman', language='de')
         resp.redirect('/answer')
     except Exception as e:
         print(str(e))
-        resp.say('I am having trouble understanding you.', voice='woman', language='en')
+        resp.say('I am having trouble understanding you.', voice='woman', language='hi')
         resp.redirect('/answer')
     return str(resp)
 
@@ -74,7 +83,7 @@ def outbound():
     resp = VoiceResponse()
     gather = Gather(input='speech', action='/completed', timeout=5)
     if globalSid != request.values['CallSid']:
-        gather.say('Hi, I am Jane, calling on behalf on XPO. Do you have some time to give us a feedback?', voice='woman', language='en')
+        gather.say('Hi, I am Jane, calling on behalf on XPO. Do you have some time to give us a feedback?', voice='woman', language='hi')
     resp.append(gather)
     return str(resp)
 
