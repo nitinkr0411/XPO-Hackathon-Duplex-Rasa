@@ -12,8 +12,8 @@ import json
 
 app = Flask(__name__)
 
-account_sid = 'ACd131d0d91bccb7c2b627e32e8b2f6873'
-auth_token = '4d4e8e9fbddf606d815f8606dbf57a47'
+account_sid = ''
+auth_token = ''
 client = Client(account_sid, auth_token)
 globalSid = ''
 
