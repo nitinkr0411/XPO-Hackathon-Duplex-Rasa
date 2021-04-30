@@ -34,7 +34,7 @@ python-vlc==3.0.102
 pytz==2018.4
 PyYAML==3.12
 requests==2.18.4
-rsa==3.4.2
+rsa==4.7
 s3transfer==0.1.13
 six==1.11.0
 SpeechRecognition==3.8.1
